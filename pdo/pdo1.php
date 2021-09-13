@@ -13,6 +13,9 @@ $statement->execute();
 catch(PDOException $e){
 echo $e->getMessage();
 }
+echo'<br>.................' ;
+echo var_dump($conexion);
+echo'<br>.................' ;
 foreach ($statement as $key ) {
     echo 'Nombre: '.$key['nombre'].' - ';
     echo 'Documento: '.$key['documento'].' - ';
